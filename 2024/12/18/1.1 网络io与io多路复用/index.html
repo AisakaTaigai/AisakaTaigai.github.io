@@ -200,9 +200,9 @@ toDevtools();</script><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compati
 </ul>
 <p>​        sockfd系统，sockfd是逐渐递增的,若前面有完全断开的clientfd，则会从最开始的clientfd接着向后创建</p>
 <p>类似于： 3 4 5 3(close) 6 7 3(TIME_WAIT后再次可用)</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/image/postimg/image-20241218180839065.png" alt="image-20241218180839065"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\24854\AppData\Roaming\Typora\typora-user-images\image-20241218180839065.png" alt="image-20241218180839065"></p>
 <p>​        系统中的fd限制：（linux一切皆文件）</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/image/postimg/image-20241218181216128.png" alt="image-20241218181216128"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\24854\AppData\Roaming\Typora\typora-user-images\image-20241218181216128.png" alt="image-20241218181216128"></p>
 <p>在close以后，一个fd要等一段时间才能再度使用，在close以后，需要等待IO回收的时间(TIME_WAIT)， 一般是60秒，可以通过</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv<span class="number">4.</span>tcp_fin_timeout</span><br><span class="line">修改 tcp_fin_timeout</span><br><span class="line">tcp_fin_timeout 参数控制 TIME_WAIT 状态的持续时间（以秒为单位）</span><br><span class="line"></span><br><span class="line">sudo sysctl -w net.ipv<span class="number">4.</span>tcp_fin_timeout=<span class="number">30</span></span><br><span class="line">这会将 TIME_WAIT 的持续时间设置为 <span class="number">30</span> 秒。</span><br></pre></td></tr></table></figure>
 <p>进行修改。</p>
@@ -255,7 +255,7 @@ toDevtools();</script><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compati
 <ul>
 <li><p>fd_set是什么？：</p>
 <ul>
-<li>是一个比特位集合， 中间默认定义为1024  位<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/image/postimg/image-20241219000330391.png" alt="image-20241219000330391"></li>
+<li>是一个比特位集合， 中间默认定义为1024  位<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\24854\AppData\Roaming\Typora\typora-user-images\image-20241219000330391.png" alt="image-20241219000330391"></li>
 </ul>
 </li>
 <li><p>Select 的特点：</p>
@@ -298,7 +298,7 @@ toDevtools();</script><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compati
 </ul>
 </li>
 <li><strong>高效的内核实现</strong>：<ul>
-<li><code>epoll</code> 在内核中<strong>维护一个红黑树</strong>来跟踪注册的文件描述符，以及一个双<strong>向链表来管理就绪的文件描述符</strong>。这种数据结构使得插入、删除和查找操作都非常高效，不需要遍历所有描述符。</li>
+<li><code>epoll</code> 在内核中<strong>维护一个红黑树</strong>来跟踪注册的文件描述符，以及一个<strong>双向链表来管理就绪的文件描述符</strong>。这种数据结构使得插入、删除和查找操作都非常高效，不需要遍历所有描述符。</li>
 </ul>
 </li>
 <li><strong>减少系统调用开销</strong>：<ul>
