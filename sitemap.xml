@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.aisakataiga.cn/social/link/index.html</loc>
+    <loc>https://www.aisakataiga.cn/box/nav/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -11,25 +11,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/posts/1f6aba9a.html</loc>
-    
-    <lastmod>2026-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.aisakataiga.cn/posts/f13f5ad6.html</loc>
-    
-    <lastmod>2026-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.aisakataiga.cn/posts/15c222b5.html</loc>
+    <loc>https://www.aisakataiga.cn/categories/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -47,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/social/fcircle/index.html</loc>
+    <loc>https://www.aisakataiga.cn/box/animation/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -56,7 +38,34 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/personal/love/index.html</loc>
+    <loc>https://www.aisakataiga.cn/life/games/index.html</loc>
+    
+    <lastmod>2026-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aisakataiga.cn/box/gallery/index.html</loc>
+    
+    <lastmod>2026-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aisakataiga.cn/life/movies/index.html</loc>
+    
+    <lastmod>2026-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aisakataiga.cn/life/music/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -92,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/life/movies/index.html</loc>
+    <loc>https://www.aisakataiga.cn/social/link/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -101,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/life/games/index.html</loc>
+    <loc>https://www.aisakataiga.cn/social/fcircle/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -110,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/life/music/index.html</loc>
+    <loc>https://www.aisakataiga.cn/personal/love/index.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -128,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/categories/index.html</loc>
+    <loc>https://www.aisakataiga.cn/posts/f13f5ad6.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -137,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/box/nav/index.html</loc>
+    <loc>https://www.aisakataiga.cn/posts/1f6aba9a.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -146,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/box/gallery/index.html</loc>
+    <loc>https://www.aisakataiga.cn/posts/15c222b5.html</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -155,9 +164,9 @@
   </url>
   
   <url>
-    <loc>https://www.aisakataiga.cn/box/animation/index.html</loc>
+    <loc>https://www.aisakataiga.cn/site/echarts/index.html</loc>
     
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2024-09-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -167,15 +176,6 @@
     <loc>https://www.aisakataiga.cn/posts/2013454d.html</loc>
     
     <lastmod>2022-10-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.aisakataiga.cn/site/echarts/index.html</loc>
-    
-    <lastmod>2022-09-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
