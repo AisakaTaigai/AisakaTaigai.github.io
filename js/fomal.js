@@ -102,7 +102,7 @@ function showWelcome() {
   // 检查ipLoacation是否已加载
   if (!ipLoacation || !ipLoacation.result || !ipLoacation.result.location) {
     console.log('地理位置信息尚未加载，使用默认欢迎语');
-    let welcomeMsg = "欢迎来到AisakaTaiga🥝の小家!";
+    let welcomeMsg = "I wish you to become your own sun, no need to rely on whos light.";
     document.getElementById("welcome-info").innerHTML = welcomeMsg;
     return;
   }
