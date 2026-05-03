@@ -1127,7 +1127,7 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到AisakaTaiga🥝の小家!\n`,
+    `I wish you to become your own sun, no need to rely on whos light.\n`,
     `Future is now 🍭🍭🍭\n`,
     "小站已经苟活",
     dnum,
