@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.aisakataiga.cn/posts/15c222b5.html</loc>
+    
+    <lastmod>2026-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aisakataiga.cn/posts/0.html</loc>
+    
+    <lastmod>2026-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.aisakataiga.cn/posts/1f6aba9a.html</loc>
     
     <lastmod>2026-05-03</lastmod>
@@ -222,6 +240,13 @@
   
   <url>
     <loc>https://www.aisakataiga.cn/categories/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.aisakataiga.cn/categories/Github/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
