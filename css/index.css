@@ -9507,6 +9507,123 @@ hr:before {
   transition: all 0.3s ease-in-out;
 }
 
+/* 文章开头内联目录样式 */
+.post-inline-toc {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border: var(--border-style);
+  border-radius: 15px;
+  padding: 20px 25px;
+  margin: 20px 0 30px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .post-inline-toc {
+  background: var(--trans-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.post-inline-toc:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.post-inline-toc .toc-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--theme-color);
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+.post-inline-toc .toc-content {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.post-inline-toc .toc-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.post-inline-toc .toc-content::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color);
+  border-radius: 3px;
+}
+
+.post-inline-toc .toc-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.post-inline-toc .toc-content li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.post-inline-toc .toc-content a {
+  color: var(--font-color);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.post-inline-toc .toc-content a:hover {
+  color: var(--theme-color);
+  background: rgba(var(--theme-color-rgb), 0.1);
+  padding-left: 12px;
+}
+
+.post-inline-toc .toc-content .toc-level-1 {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.post-inline-toc .toc-content .toc-level-2 {
+  padding-left: 20px;
+  font-size: 0.98em;
+}
+
+.post-inline-toc .toc-content .toc-level-3 {
+  padding-left: 40px;
+  font-size: 0.95em;
+  color: var(--font-color-light);
+}
+
+.post-inline-toc .toc-content .toc-level-4,
+.post-inline-toc .toc-content .toc-level-5,
+.post-inline-toc .toc-content .toc-level-6 {
+  padding-left: 60px;
+  font-size: 0.92em;
+  color: var(--font-color-light);
+}
+
+/* 手机端适配 */
+@media screen and (max-width: 768px) {
+  .post-inline-toc {
+    padding: 15px 18px;
+    margin: 15px 0 25px 0;
+  }
+  
+  .post-inline-toc .toc-content {
+    max-height: 300px;
+  }
+  
+  .post-inline-toc .toc-content .toc-level-3,
+  .post-inline-toc .toc-content .toc-level-4,
+  .post-inline-toc .toc-content .toc-level-5,
+  .post-inline-toc .toc-content .toc-level-6 {
+    padding-left: 20px;
+  }
+}
+
 .search-dialog {
   position: fixed;
   top: 10%;
