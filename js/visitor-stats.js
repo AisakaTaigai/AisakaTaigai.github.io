@@ -1,4 +1,4 @@
-// busuanzi.cc uses a separate dataset from the original ibruce service.
+// busuanzi.cc 与原 ibruce 服务的数据独立，访问量会重新累计。
 (() => {
   if (window.blogVisitorStatsInitialized) return;
   window.blogVisitorStatsInitialized = true;
@@ -22,7 +22,7 @@
     const timeout = setTimeout(() => controller.abort(), 10000);
     display('加载中…');
     try {
-      // Match the provider's public tracking script; no credentials are needed.
+      // 按服务商公开统计脚本的方式请求接口，无需密钥。
       const response = await fetch('https://cdn.busuanzi.cc/api.php', {
         method: 'POST',
         body: JSON.stringify({ url: location.href, referrer: document.referrer }),
